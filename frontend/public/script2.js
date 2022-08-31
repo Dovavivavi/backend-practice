@@ -33,4 +33,38 @@ window.addEventListener('load', () => {
 
     console.log(event.target, imgName, imgFile);
   });
+
+  // input field from
+
+  const yourName = document.querySelector('.your-name');
+  const yourAge = document.querySelector('.your-age');
+  const yourMail = document.querySelector('.your-mail');
+  const yourAdd = document.querySelector('.your-add');
+  const submit = document.querySelector('.submit');
+
+  submit.addEventListener('click', () => {
+    // console.log(yourName.value);
+    // console.log(yourNum.value);
+
+    let yourValue = {
+      name: `${yourName.value}`,
+      age: `${yourAge.value}`,
+      address: `${yourAdd.value}`,
+      email: `${yourMail.value}`,
+    };
+
+    console.log(yourValue);
+
+    // const jsonYour = JSON.stringify(yourValue);
+    // console.log(jsonYour);
+
+    //   fs.writeFile('../backend/yourData', JSON.stringify(yourValue), (err) => {
+    //     if (err) {
+    //       console.log(err);
+    //     } else {
+    //       console.log('file successfully added');
+    //     }
+    //   });
+    // });
+  });
 });
