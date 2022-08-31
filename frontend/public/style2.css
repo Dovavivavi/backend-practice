@@ -1,3 +1,23 @@
 h1 {
   color: bisque;
 }
+
+form {
+  height: 20vh;
+  background-color: bisque;
+}
+
+section {
+  height: 20vh;
+  background-color: bisque;
+  border: 3px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+section > input {
+  background-color: aquamarine;
+  border: 2px solid black;
+}
